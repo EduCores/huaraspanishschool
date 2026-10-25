@@ -24,7 +24,7 @@ export default function Newsletter() {
 
   return (
     <div
-      style={{ padding: '24px', textAlign: 'center', borderTop: '1px solid #ddd', borderBottom: '1px solid #ddd' }}
+      style={{ padding: '24px', textAlign: 'center' }}
     >
       <h3 style={{ margin: '0 0 6px', fontSize: '13px', opacity: 0.7 }}>Newletter</h3>
       <p style={{ margin: '0 0 12px', fontSize: '13px', opacity: 0.7 }}>Receive news and offers directly in your email.</p>
@@ -35,12 +35,12 @@ export default function Newsletter() {
           onChange={(e) => setEmail(e.target.value)}
           placeholder="your@email.com"
           required
-          style={{ flex: 1, padding: '10px', border: '1px solid #ccc', borderRadius: '6px', fontSize: '14px' }}
+          style={{ flex: 1, padding: '10px', border: '1px solid #ccc', borderRadius: '6px', fontSize: '13px', opacity: 0.7 }}
         />
         <button
           type="submit"
           disabled={status === 'loading'}
-          style={{ padding: '10px 18px', background: '#ff4d00', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer', fontSize: '14px', fontWeight: 600 }}
+          style={{ padding: '10px 18px', background: '#ff4d00', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer', fontSize: '13px', fontWeight: 600 }}
         >
           {status === 'loading' ? 'Sending...' : 'Subscribe'}
         </button>
