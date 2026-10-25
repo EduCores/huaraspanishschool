@@ -10,7 +10,6 @@ import type { CheckoutData } from '@/lib/checkout';
 import { getDict } from '@/lib/i18n';
 import { lineTotal, nextMonday9, track, unitText } from '@/lib/utils';
 import { SiteProvider, type Consent, type OrderInfo } from './SiteContext';
-import Newsletter from './Newsletter';
 import PromoBar from './PromoBar';
 import Header from './Header';
 import SearchPanel from './SearchPanel';
@@ -367,7 +366,6 @@ export default function Site({ locale, content }: Props) {
         }}
       />
         <Hero />
-        <Newsletter />
         <BigMarquee />
       <MenuDrawer />
       <main>
