@@ -4,7 +4,7 @@ import { useSite } from './SiteContext';
 
 export default function PromoBar() {
   const { c, locale } = useSite();
-  const items = [...c.promo, ...c.promo];
+  const items = [...c.promo, ...c.promo, ...c.promo, ...c.promo];
   return (
     <div className="promo">
       <div className="promo-track">

@@ -4,7 +4,7 @@ import { useSite } from './SiteContext';
 
 export default function BigMarquee() {
   const { c } = useSite();
-  const items = [...c.marquee, ...c.marquee];
+  const items = [...c.marquee, ...c.marquee, ...c.marquee, ...c.marquee];
   return (
     <div className="big-marquee" aria-hidden="true">
       <div>
