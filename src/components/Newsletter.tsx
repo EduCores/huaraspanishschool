@@ -26,9 +26,9 @@ export default function Newsletter() {
     <div
       style={{ padding: '24px', textAlign: 'center', borderTop: '1px solid #ddd', borderBottom: '1px solid #ddd' }}
     >
-      <h3 style={{ margin: '0 0 6px' }}>Newletter</h3>
-      <p style={{ margin: '0 0 12px', opacity: 0.8 }}>Receive news and offers directly in your email.</p>
-      <form onSubmit={handleSubmit} style={{ display: 'flex', gap: '8px', maxWidth: '400px', margin: '0 auto' }}>
+      <h3 style={{ margin: '0 0 6px', fontSize: '13px', opacity: 0.7 }}>Newletter</h3>
+      <p style={{ margin: '0 0 12px', fontSize: '13px', opacity: 0.7 }}>Receive news and offers directly in your email.</p>
+      <form onSubmit={handleSubmit} style={{ display: 'flex', gap: '8px', maxWidth: '100%', margin: '0 auto' }}>
         <input
           type="email"
           value={email}
