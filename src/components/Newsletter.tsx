@@ -24,7 +24,7 @@ export default function Newsletter() {
 
   return (
     <div
-      style={{ padding: '24px', background: '#f4efe6', textAlign: 'center', borderTop: '1px solid #ddd', borderBottom: '1px solid #ddd' }}
+      style={{ padding: '24px', textAlign: 'center', borderTop: '1px solid #ddd', borderBottom: '1px solid #ddd' }}
     >
       <h3 style={{ margin: '0 0 6px' }}>Newletter</h3>
       <p style={{ margin: '0 0 12px', opacity: 0.8 }}>Receive news and offers directly in your email.</p>
