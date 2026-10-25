@@ -80,6 +80,23 @@ export default function Footer() {
               <WhatsAppIcon fill="#fff" />
             </a>
           </div>
+          <div style={{ marginTop: '16px' }}>
+            <h4>{t.footerHelp}</h4>
+            <a href="#faq" style={{ display: 'block', fontSize: '13px', opacity: 0.7, padding: '3px 0' }}>
+              {t.menuFaq}
+            </a>
+            <a href="#booking" style={{ display: 'block', fontSize: '13px', opacity: 0.7, padding: '3px 0' }}>
+              {t.bookNow}
+            </a>
+            <a
+              href={`https://wa.me/${c.contact.whatsapp}`}
+              target="_blank"
+              rel="noopener"
+              style={{ display: 'block', fontSize: '13px', opacity: 0.7, padding: '3px 0' }}
+            >
+              {t.contact}
+            </a>
+          </div>
         </div>
         <div>
           <h4>{t.footerSchool}</h4>
@@ -94,23 +111,6 @@ export default function Footer() {
           </a>
           <a href="#casa" style={{ display: 'block', fontSize: '13px', opacity: 0.7, padding: '3px 0' }}>
             {t.community}
-          </a>
-        </div>
-        <div>
-          <h4>{t.footerHelp}</h4>
-          <a href="#faq" style={{ display: 'block', fontSize: '13px', opacity: 0.7, padding: '3px 0' }}>
-            {t.menuFaq}
-          </a>
-          <a href="#booking" style={{ display: 'block', fontSize: '13px', opacity: 0.7, padding: '3px 0' }}>
-            {t.bookNow}
-          </a>
-          <a
-            href={`https://wa.me/${c.contact.whatsapp}`}
-            target="_blank"
-            rel="noopener"
-            style={{ display: 'block', fontSize: '13px', opacity: 0.7, padding: '3px 0' }}
-          >
-            {t.contact}
           </a>
         </div>
         <div>
