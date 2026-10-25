@@ -1,0 +1,8 @@
+# Cloudflare Pages - Next.js Configuration
+# https://developers.cloudflare.com/pages/framework-guides/configure-a-nextjs-app/
+
+# Available binding variables
+# https://developers.cloudflare.com/pages/functions/bindings/
+
+# For static export (output: 'export' in next.config.mjs)
+# Build output: out/
