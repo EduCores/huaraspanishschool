@@ -26,16 +26,16 @@ export default function Newsletter() {
     <div
       style={{ padding: '24px', textAlign: 'center' }}
     >
-      <h3 style={{ margin: '0 0 6px', fontSize: '13px', opacity: 0.7 }}>Newletter</h3>
-      <p style={{ margin: '0 0 12px', fontSize: '13px', opacity: 0.7 }}>Receive news and offers directly in your email.</p>
-      <form onSubmit={handleSubmit} style={{ display: 'flex', gap: '8px', maxWidth: '100%', margin: '0 auto' }}>
+      <h4 style={{ margin: '0 0 6px', fontFamily: "'Archivo'" }}>Newletter</h4>
+      <p style={{ margin: '0 0 12px', fontSize: '13px', opacity: 0.7, display: 'block', padding: '3px 0' }}>Receive news and offers directly in your email.</p>
+      <form onSubmit={handleSubmit} style={{ display: 'flex', gap: '8px', width: '100%', margin: '0' }}>
         <input
           type="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           placeholder="your@email.com"
           required
-          style={{ flex: 1, padding: '10px', border: '1px solid #ccc', borderRadius: '6px', fontSize: '13px', opacity: 0.7 }}
+          style={{ flex: '2', padding: '10px', border: '1px solid #ccc', borderRadius: '6px', fontSize: '13px', opacity: 0.7, minWidth: 0 }}
         />
         <button
           type="submit"
