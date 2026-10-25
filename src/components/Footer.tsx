@@ -1,5 +1,6 @@
 'use client';
 
+import { useEffect, useState } from 'react';
 import { useSite } from './SiteContext';
 import Newsletter from './Newsletter';
 import {
@@ -13,8 +14,12 @@ import {
 
 export default function Footer() {
   const { c, locale, t } = useSite();
-  const year = new Date().getFullYear();
+  const [year, setYear] = useState<number | null>(null);
   const letters = ['H', 'U', 'A', 'R', 'A', '°'];
+
+  useEffect(() => {
+    setYear(new Date().getFullYear());
+  }, []);
 
   return (
     <footer>
@@ -135,7 +140,7 @@ export default function Footer() {
         ))}
       </div>
       <p style={{ textAlign: 'center', fontSize: '11px', opacity: 0.5, padding: '0 16px' }} suppressHydrationWarning>
-        © {year} Huara Spanish School
+        © {year ?? ''} Huara Spanish School
       </p>
     </footer>
   );
