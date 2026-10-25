@@ -12,7 +12,7 @@ import {
 } from './Icons';
 
 export default function Footer() {
-  const { c, locale, t, openCookieSettings } = useSite();
+  const { c, locale, t } = useSite();
   const year = new Date().getFullYear();
   const letters = ['H', 'U', 'A', 'R', 'A', '°'];
 
@@ -123,16 +123,6 @@ export default function Footer() {
           </a>
           <a href={c.legal.terms} style={{ display: 'block', fontSize: '13px', opacity: 0.7, padding: '3px 0' }}>
             {t.terms}
-          </a>
-          <a
-            href="#"
-            onClick={(event) => {
-              event.preventDefault();
-              openCookieSettings();
-            }}
-            style={{ display: 'block', fontSize: '13px', opacity: 0.7, padding: '3px 0' }}
-          >
-            {t.cookieSettings}
           </a>
         </div>
         <div>
