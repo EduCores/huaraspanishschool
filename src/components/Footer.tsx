@@ -1,7 +1,6 @@
 'use client';
 
 import { useSite } from './SiteContext';
-import Newsletter from './Newsletter';
 import {
   ClockIcon,
   FacebookIcon,
@@ -18,7 +17,6 @@ export default function Footer() {
 
   return (
     <footer>
-      <Newsletter />
       <video className="foot-video" autoPlay muted loop playsInline preload="auto">
         <source src="/1.mp4" type="video/mp4" />
       </video>
