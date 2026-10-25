@@ -116,6 +116,7 @@ export default function Footer() {
               {t.bookNow}
             </a>
           </div>
+        </div>
         <div>
           <Newsletter />
         </div>
