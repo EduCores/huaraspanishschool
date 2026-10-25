@@ -1,6 +1,7 @@
 'use client';
 
 import { useSite } from './SiteContext';
+import Newsletter from './Newsletter';
 import {
   ClockIcon,
   FacebookIcon,
@@ -133,6 +134,9 @@ export default function Footer() {
           >
             {t.cookieSettings}
           </a>
+        </div>
+        <div>
+          <Newsletter />
         </div>
       </div>
       <div className="container pay-strip">
