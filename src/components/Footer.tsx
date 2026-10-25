@@ -80,15 +80,6 @@ export default function Footer() {
               <WhatsAppIcon fill="#fff" />
             </a>
           </div>
-          <div style={{ marginTop: '16px' }}>
-            <h4>{t.footerHelp}</h4>
-            <a href="#faq" style={{ display: 'block', fontSize: '13px', opacity: 0.7, padding: '3px 0' }}>
-              {t.menuFaq}
-            </a>
-            <a href="#booking" style={{ display: 'block', fontSize: '13px', opacity: 0.7, padding: '3px 0' }}>
-              {t.bookNow}
-            </a>
-          </div>
         </div>
         <div>
           <h4>{t.footerSchool}</h4>
@@ -116,7 +107,15 @@ export default function Footer() {
           <a href={c.legal.terms} style={{ display: 'block', fontSize: '13px', opacity: 0.7, padding: '3px 0' }}>
             {t.terms}
           </a>
-        </div>
+          <div style={{ marginTop: '16px' }}>
+            <h4>{t.footerHelp}</h4>
+            <a href="#faq" style={{ display: 'block', fontSize: '13px', opacity: 0.7, padding: '3px 0' }}>
+              {t.menuFaq}
+            </a>
+            <a href="#booking" style={{ display: 'block', fontSize: '13px', opacity: 0.7, padding: '3px 0' }}>
+              {t.bookNow}
+            </a>
+          </div>
         <div>
           <Newsletter />
         </div>
