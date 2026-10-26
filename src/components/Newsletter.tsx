@@ -40,7 +40,7 @@ export default function Newsletter() {
         <button
           type="submit"
           disabled={status === 'loading'}
-          style={{ padding: '10px 18px', background: '#ff4d00', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer', fontSize: '13px', fontWeight: 600 }}
+          style={{ padding: '10px 18px', background: '#ff4d00', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer', fontSize: '15px', fontWeight: 600 }}
         >
           {status === 'loading' ? 'Sending...' : 'Subscribe'}
         </button>
