@@ -3,7 +3,7 @@
 import { useSite } from './SiteContext';
 import { useEffect, useState } from 'react';
 
-const SLIDER_IMAGES = [
+const BG_IMAGES = [
   '/slider/hero-mar_1.jpg',
   '/slider/hero-mar_2.jpg',
   '/slider/hero-mar_3.jpg',
@@ -16,7 +16,7 @@ export default function Hero() {
 
   useEffect(() => {
     const timer = setInterval(() => {
-      setCurrent((prev) => (prev + 1) % SLIDER_IMAGES.length);
+      setCurrent((prev) => (prev + 1) % BG_IMAGES.length);
     }, 5000);
     return () => clearInterval(timer);
   }, []);
@@ -25,26 +25,7 @@ export default function Hero() {
 
   return (
     <div className="hero">
-      <div className="hero-slider">
-        {SLIDER_IMAGES.map((src, index) => (
-          <div
-            key={src}
-            className={`hero-slide${index === current ? ' active' : ''}`}
-          >
-            <img src={src} alt={`Pichilemu ${index + 1}`} />
-          </div>
-        ))}
-        <div className="hero-dots">
-          {SLIDER_IMAGES.map((_, index) => (
-            <button
-              key={index}
-              className={`hero-dot${index === current ? ' active' : ''}`}
-              onClick={() => setCurrent(index)}
-              aria-label={`Slide ${index + 1}`}
-            />
-          ))}
-        </div>
-      </div>
+      <div className="hero-bg" style={{ backgroundImage: `url(${BG_IMAGES[current]})` }} />
       <div className="hero-content">
         <div className="eyebrow">
           <i />
