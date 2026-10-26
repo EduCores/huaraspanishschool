@@ -8,7 +8,7 @@ const singletonTypes = new Set(['siteSettings', 'story', 'lookbook']);
 export default defineConfig({
   name: 'huara',
   title: 'Huara Spanish School',
-  projectId: 'oc4anegte',
+  projectId: 'k3fbld8g',
   dataset: 'production',
   plugins: [
     structureTool({

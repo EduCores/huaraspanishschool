@@ -366,8 +366,6 @@ export default function Site({ locale, content }: Props) {
           setCartOpen(false);
         }}
       />
-        <Hero />
-        <BigMarquee />
       <MenuDrawer />
       <main>
         <Hero />
