@@ -27,7 +27,7 @@ export default function Newsletter() {
       style={{ padding: '24px', textAlign: 'center' }}
     >
       <h4 style={{ margin: '0 0 6px', fontFamily: "'Archivo'" }}>Newletter</h4>
-      <p style={{ margin: '0 0 12px', fontSize: '13px', opacity: 0.7, display: 'block', padding: '3px 0' }}>Receive news and offers directly in your email.</p>
+      <p style={{ display: 'block', fontSize: '13px', opacity: 0.7, padding: '3px 0' }}>Receive news and offers directly in your email.</p>
       <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '8px', width: '100%', margin: '0' }}>
         <input
           type="email"
