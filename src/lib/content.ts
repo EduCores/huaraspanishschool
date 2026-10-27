@@ -138,7 +138,7 @@ const img = (name: string) => `/img/${name}`;
 
 export const DEFAULT_CONTENT: SiteContent = {
   siteName: 'Huara Spanish School',
-  domain: 'https://huaraspanishschool.com',
+  domain: 'https://www.huaraspanishschool.com',
   contact: {
     address: 'Pasaje Vista Hermosa 0248, Pichilemu, Chile',
     phone: '+56953336046',

@@ -1,0 +1,2 @@
+# Redirección de non-www a www para evitar contenido duplicado
+https://huaraspanishschool.com/* https://www.huaraspanishschool.com/:splat 301!

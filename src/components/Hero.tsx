@@ -7,7 +7,6 @@ const BG_IMAGES = [
   '/slider/hero-mar_1.jpg',
   '/slider/hero-mar_2.jpg',
   '/slider/hero-mar_3.jpg',
-  '/slider/hero-mar_4.jpg',
 ];
 
 export default function Hero() {
@@ -25,7 +24,15 @@ export default function Hero() {
 
   return (
     <div className="hero">
-      <div className="hero-bg" style={{ backgroundImage: `url(${BG_IMAGES[current]})` }} />
+      <div className="hero-bg" aria-hidden="true">
+        {BG_IMAGES.map((src, index) => (
+          <div
+            key={src}
+            className={`hero-bg-slide${index === current ? ' active' : ''}`}
+            style={{ backgroundImage: `url(${src})` }}
+          />
+        ))}
+      </div>
       <div className="hero-content">
         <div className="eyebrow">
           <i />
